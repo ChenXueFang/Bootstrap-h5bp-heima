@@ -1,0 +1,176 @@
+//主体最外的row
+.hot_wai_row>div{
+    margin-top: 20px;
+    @media (max-width: (@screen-sm-min - 1)){
+        margin-top: 50px;
+    }
+    //轮播定位字
+    .item{
+        .hot_lun_zi{
+            position: relative;
+            z-index: 999;
+            p{
+                color: #fff;
+                width: 100%;
+                padding: 10px 0 12px 20px;
+                font-weight: bold;
+                font-size: 22px; 
+                position: absolute;
+                bottom: -15px;
+                background: rgba(0,0,0,0.5);
+            }
+        }
+    }
+    //轮播指示器样式
+    .hot_carousel{
+        margin-bottom: 30px;
+        @media (max-width: (@grid-float-breakpoint - 1)){
+            img{
+//              height: 250px;
+            }
+        }
+    }
+    .carousel-indicators {
+      position: absolute;
+      bottom: 0px;
+      left: 92%;
+      z-index: 15;
+      width: 60%;
+      padding-left: 0;
+      list-style: none;
+      text-align: center;
+    
+      li {
+        display: inline-block;
+        width:  10px;
+        height: 10px;
+        margin: 1px;
+        text-indent: -999px;
+    //  border: 1px solid @carousel-indicator-border-color;
+        border-radius: 10px;
+        cursor: pointer;
+    
+        // IE8-9 hack for event handling
+        //
+        // Internet Explorer 8-9 does not support clicks on elements without a set
+        // `background-color`. We cannot use `filter` since that's not viewed as a
+        // background color by the browser. Thus, a hack is needed.
+        // See https://developer.mozilla.org/en-US/docs/Web/Events/click#Internet_Explorer
+        //
+        // For IE8, we set solid black as it doesn't support `rgba()`. For IE9, we
+        // set alpha transparency for the best results possible.
+        background-color: #000 \9; // IE8
+        background-color: rgba(0,0,0,0.5); // IE9
+      }
+      .active {
+        margin: 0;
+        width:  30px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: #fff;
+      }
+    }  
+}
+//滚动的字
+.scrollbox{
+    background: #fff;
+    padding: 20px 20px 0 0;
+    overflow: hidden;
+    .kuaiXun{
+        font-size: 20px;
+        margin-left: 20px;
+        span{
+            margin-top: 3px;
+            height: 20px;
+            padding-right: 5px;
+            border-left: 3px solid #fd4e3d;
+        } 
+    }
+    .hot_scroll_zi{
+        li{
+            height: 80px;
+            content:".";  
+            color: red;
+        }
+        a{
+            text-decoration: none;
+            color: #212121;
+            font-size: 14px;
+        }
+        div{
+            font-size: 11px;
+            color: #868686;
+            margin-top: -4px;
+//          padding-bottom: 50px;
+        }
+    }
+}
+//热门课程
+.lesson_container{
+    text-align: center;
+    padding: 20px 20px 0;
+    width: 100%;
+    margin-top: 30px;
+    background: #fff;
+    .kuaiXun{
+        text-align: left;
+        font-size: 20px;
+        margin-left: 20px;
+        span{
+            margin-top: 3px;
+            height: 20px;
+            padding-right: 8px;
+            border-left: 3px solid #fd4e3d;
+        } 
+    }
+    .lesson_img{
+        display: inline-block;
+        padding-bottom: 20px;
+    }
+}
+//二维码
+.erWeiMa{
+    padding: 20px;
+    background: #fff;
+    margin-top: 20px;
+    text-align: center;
+    .bottom_Ma{
+        margin-top: 20px;
+    }
+    .er_line{
+        border-bottom: 1px solid #d8d8d8;
+//      width: 27%;
+//      margin-top: 220px;
+//      margin-left: 3%;
+    }
+    .er_btn{
+        font-size: 14px;
+        padding: 8px 40px;
+        margin-top: 20px;
+    }
+}
+//左边详情新闻
+.hot_news{
+    padding: 20px 27px 20px 20px;
+    background: #fff;
+    border-bottom: 1px solid #d8d8d8;
+    .hot_news_col{
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

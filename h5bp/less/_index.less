@@ -1,0 +1,220 @@
+//body背景颜色
+body{
+    background: #f1f4fb;
+}
+nav{
+    box-shadow: 0px 2px 40px 2px #ddd;
+}
+//主体
+main{
+    margin-top: 80px;
+}
+main[role="hot_main"]{
+    margin-top: 125px;
+}
+//活动开始**************************************
+//"活动"图片下的按钮
+.img_zi{
+    height: 185px;
+    background: #fff;
+    .img_zi_con{
+        padding: 24px;
+        h3{
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+        input[type="button"]{
+        width: 145px;
+        height: 40px;
+        border-radius: 20px;
+    }
+    } 
+}
+//"活动"每一块
+.col{
+    margin-top: 40px;
+    &:hover{
+        box-shadow: 1px 5px 30px 3px #ccc;
+    }
+}
+//"活动"查看更多
+#look_more{
+    margin-top: 80px;
+    margin-bottom: 120px;
+    line-height: 60px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    background: #fff;
+}
+//活动结束*******************************************
+
+//index开始*********************************************
+//轮播
+.carousel-inner{
+    .item{
+        @media (max-width: (@grid-float-breakpoint - 1)){
+            img{
+                margin-top: 30px;
+            }
+        }
+    }
+}
+//产业兴城
+.city_box{
+    text-align: center;
+    background: #fff;
+    b{
+        padding-top: 93px;
+        display: block;
+        font-size: 42px;
+        margin-bottom: 50px;
+        @media (max-width: (@grid-float-breakpoint - 1)){
+            padding-top: 25px;
+            margin-bottom: 25px;
+            font-size: 20px;
+        }
+    }
+    .city_nei_row{
+        padding-bottom: 93px;
+    }
+    .city_zi{
+        margin-top: 25px;
+        font-size: 16px;
+        text-align: left;
+        @media (max-width: (@grid-float-breakpoint - 1)){
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 24px;
+            padding-bottom: 30px;
+        }
+    }
+}
+//产品和服务
+.serve_box{
+    background: #f1f4fb;
+    .serve_three{
+        .serve_nei_row{
+            margin-bottom: 90px; 
+            @media (max-width: (@screen-sm-min - 1)){
+                .serve_col{
+                    background: #fff;
+                    transition: 1s;
+                }
+            }
+            .serve_zi_box{
+                font-size: 16px;
+                background: #fff;
+                padding-bottom: 33px;
+                >div{
+                   font-weight: bold;
+                   font-size: 24px;
+                   padding: 30px 0 22px;
+                }
+            }
+            .serve_col{
+                &:hover{
+                    box-shadow: 1px 5px 30px 3px #ccc;
+                }
+            }
+        }
+    }
+    
+}
+//已落地城市
+.already{
+    width: 100%;
+    text-align: center;
+    background: #fff;
+    padding-bottom: 90px;
+    @media (max-width: (@screen-sm-min - 1)){
+        padding-bottom: 20px;
+    }
+    .already_box{
+        ul{
+            list-style-type: none;
+            li{
+                cursor: pointer;
+            }
+        }
+        .already_zi{
+            font-size: 23px;
+            font-weight: bold;
+            width: 192px;
+            background: #f1f4fb;
+            li{
+                width: 192px;
+                margin-left: -40px;
+                line-height: 45px;
+            }
+        }
+        .already_zi_s{
+            margin-top: -10px;
+            margin-left: -45px;
+            li{
+                font-size: 15px;
+                padding: 5px;
+                font-weight: bold;
+                float: left;
+            }
+        }
+        .already_selected{
+            color: #fff;
+            background: #fd4e3e;
+        }
+        .already_img{
+            li{
+                display: none;
+            }
+            .already_img_show{
+                display: block;
+            }
+        }
+    }
+}
+//计划落地城市
+.plan_box{
+    padding-bottom: 120px;
+    @media (max-width: (@grid-float-breakpoint - 1)){
+        padding-bottom: 60px;
+    }
+    .mengBan_row{
+        background: #000;
+    }
+    .plan_col{
+        padding: 0;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        position: relative;
+        p{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -15px;
+            margin-left: -15px;
+        }
+        >div{
+            text-align: center;
+        }
+        .plan_hei_zi{
+            margin-left: -40px;
+        }
+    }
+    .plan_hei{
+        background: #242424;
+        padding: 91px 0;
+        @media (max-width: (@grid-float-breakpoint - 1)){
+            padding: 122px 0;
+        }
+        @media (max-width: (@screen-sm-min - 1)){
+            padding: 80px 0;
+        }
+    }
+}
+
+
+
+
+
+
