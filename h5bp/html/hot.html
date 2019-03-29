@@ -18,18 +18,35 @@
 				<!--导航条内容居中container-->
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle nav-left" data-toggle="collapse" data-target=".navbar-collapse">
-		                    <span class="icon-bar"></span>
-		                    <span class="icon-bar"></span>
-		                    <span class="icon-bar"></span>
-		                </button>
-						<a class="navbar-brand nav_logo" href="#">
-							<img src="../img/logo.png">
+						<!--大的logo图-->
+						<a class="navbar-brand nav_logo visible-lg visible-md pull-left" href="#">
+							<img src="../img/logo.png" class="">
 						</a>
+						<!--大的logo图-->
+						<!--row缩小时的三个-->
+						<div class="row">
+							<div class="col-sm-4 col-xs-4 visible-sm visible-xs">
+								<button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-collapse">
+				                    <span class="icon-bar"></span>
+				                    <span class="icon-bar"></span>
+				                    <span class="icon-bar"></span>
+				                </button>
+							</div>
+							<div class="col-sm-4 col-xs-4 visible-sm visible-xs">
+								<a class="navbar-brand nav_logo" href="#">
+									<img src="../img/logo.png" class="visible-lg visible-md pull-left">
+									<div class="small_logo"><img src="../img/logo.png"  style="width: 90px;"></div>
+								</a>
+							</div>
+							<div class="col-sm-4 col-xs-4 visible-sm visible-xs">
+								<div class="navbar-brand"><span class="glyphicon glyphicon-search"></span></div>
+							</div>
+						</div>
+						<!--row缩小时的三个-->
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">热点 <span class="sr-only">(current)</span></a></li>
+							<li class="active"><a href="#">产品升级 <span class="sr-only">(current)</span></a></li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="heiMa">黑马学院<b class="caret"></b></a>
 								<ul class="dropdown-menu" id="heiMa_show">
@@ -48,32 +65,21 @@
 								</ul>
 							</li>
 							<li><a href="#">马脑</a></li>
-							<li><a href="#">创业公司</a></li>
-							<li><a href="#">活动</a></li>
-							<li><a href="#">产业升级</a></li>
+							<li><a href="../index.html">创业公司</a></li>
+							<li><a href="html/activity.html">活动</a></li>
+							<li><a href="html/hot.html">热点</a></li>
 						</ul>
-						<ul class="nav navbar-nav navbar-right">
+						<ul class="nav navbar-nav pull-right">
+							<li><form class="navbar-form">
+						        <div class="form-group form_box">
+						          	<input type="text" class="form-control form_button" placeholder="搜索"><span class="glyphicon glyphicon-search"></span>
+						        </div>
+						    </form></li>
 							<li><a href="#" id="nav_enter">登录/注册</a></li>
 						</ul>
-						<form class="navbar-form navbar-right">
-					        <div class="form-group form_box">
-					          	<input type="text" class="form-control form_button" placeholder="搜索"><span class="glyphicon glyphicon-search"></span>
-					        </div>
-					    </form>
 					</div>
 				</div>
 				<!--导航条内容居中container-->
-				<!--灰色导航条-->
-				<div id="nav_gray" class="container-fluid">
-					<ul class="container">
-						<li><a href="#" class="nav_red">推荐</a></li>
-						<li><a href="#">产业</a></li>
-						<li><a href="#">人物</a></li>
-						<li><a href="#">资本动态</a></li>
-						<li><a href="#">创业观察</a></li>
-					</ul>
-				</div>
-				<!--灰色导航条-->
 			</nav>
 		</header>
 		<!--头部-->
@@ -148,40 +154,415 @@
 						  </div>
 						</div>
 						<!--轮播-->
-						<!--详情新闻-->
-						<div class="hot_news">
-							<!--新闻new-->
-							<div class="row">
-								<!--新闻图-->
-								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-									<img src="../img/hot_news (1).jpg" class="img-responsive center-block" style="height: 160px;"/>
-								</div>
-								<!--新闻图-->
-								<!--新闻字-->
-								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 hot_news_col">
-									<a href="#" class="hot_news_a">千亿金融平台团贷网炸雷，实控人自首，牛股停牌，波及20多万投资人</a>
-									<p>团贷网涉嫌非法吸收公众存款被立案 二月末借贷余额超145亿元。</p>
-									<!--一排三个-->
-									<div class="hot_news_three">
-										<p class="pull-left"><img src="../img/hot_news1.jpg"/> i黑马</p>
-										<p class="pull-left"><span class="glyphicon glyphicon-time"></span> 2019-03-28 17:15</p>
-										<p class="pull-left"><span class="glyphicon glyphicon-thumbs-up"></span> 40</p>
+						<!--详情新闻盒子-->
+						<div class="hot_news_box">
+							<!--每一行新闻盒子-->
+							<div class="hot_news">
+								<!--row新闻new-->
+								<div class="row">
+									<!--新闻图-->
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<img src="../img/hot_news (1).jpg" class="img-responsive center-block" style="height: 160px;"/>
 									</div>
-									<!--一排三个-->
+									<!--新闻图-->
+									<!--新闻字-->
+									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 hot_news_col">
+										<a href="#" class="hot_news_a">千亿金融平台团贷网炸雷，实控人自首，牛股停牌，波及20多万投资人</a>
+										<p>团贷网涉嫌非法吸收公众存款被立案 二月末借贷余额超145亿元。</p>
+										<!--一排三个-->
+										<div class="hot_news_three">
+											<p class="pull-left"><img src="../img/hot_news1.jpg"/> i黑马</p>
+											<p class="pull-left hot_news_time"><span class="glyphicon glyphicon-time"></span> 2019-03-28 17:15</p>
+											<p class="pull-left"><span class="glyphicon glyphicon-thumbs-up"></span> 40</p>
+										</div>
+										<!--一排三个-->
+									</div>
+									<!--新闻字-->
 								</div>
-								<!--新闻字-->
+								<!--row新闻new-->
 							</div>
-							<!--新闻new-->
+							<!--每一行新闻盒子-->
+							<!--每一行新闻盒子-->
+							<div class="hot_news">
+								<!--row新闻new-->
+								<div class="row">
+									<!--新闻图-->
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<img src="../img/hot_news (2).jpg" class="img-responsive center-block" style="height: 160px;"/>
+									</div>
+									<!--新闻图-->
+									<!--新闻字-->
+									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 hot_news_col">
+										<a href="#" class="hot_news_a">千亿金融平台团贷网炸雷，实控人自首，牛股停牌，波及20多万投资人</a>
+										<p>团贷网涉嫌非法吸收公众存款被立案 二月末借贷余额超145亿元。</p>
+										<!--一排三个-->
+										<div class="hot_news_three">
+											<p class="pull-left"><img src="../img/hot_news2.png"/> i黑马</p>
+											<p class="pull-left hot_news_time"><span class="glyphicon glyphicon-time"></span> 2019-03-28 17:15</p>
+											<p class="pull-left"><span class="glyphicon glyphicon-thumbs-up"></span> 40</p>
+										</div>
+										<!--一排三个-->
+									</div>
+									<!--新闻字-->
+								</div>
+								<!--row新闻new-->
+							</div>
+							<!--每一行新闻盒子-->
+							<!--每一行新闻盒子-->
+							<div class="hot_news">
+								<!--row新闻new-->
+								<div class="row">
+									<!--新闻图-->
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<img src="../img/hot_news (3).jpg" class="img-responsive center-block" style="height: 160px;"/>
+									</div>
+									<!--新闻图-->
+									<!--新闻字-->
+									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 hot_news_col">
+										<a href="#" class="hot_news_a">千亿金融平台团贷网炸雷，实控人自首，牛股停牌，波及20多万投资人</a>
+										<p>团贷网涉嫌非法吸收公众存款被立案 二月末借贷余额超145亿元。</p>
+										<!--一排三个-->
+										<div class="hot_news_three">
+											<p class="pull-left"><img src="../img/hot_news2.png"/> i黑马</p>
+											<p class="pull-left hot_news_time"><span class="glyphicon glyphicon-time"></span> 2019-03-28 17:15</p>
+											<p class="pull-left"><span class="glyphicon glyphicon-thumbs-up"></span> 40</p>
+										</div>
+										<!--一排三个-->
+									</div>
+									<!--新闻字-->
+								</div>
+								<!--row新闻new-->
+							</div>
+							<!--每一行新闻盒子-->
+							<!--每一行新闻盒子-->
+							<div class="hot_news">
+								<!--row新闻new-->
+								<div class="row">
+									<!--新闻图-->
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<img src="../img/hot_news (4).jpg" class="img-responsive center-block" style="height: 160px;"/>
+									</div>
+									<!--新闻图-->
+									<!--新闻字-->
+									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 hot_news_col">
+										<a href="#" class="hot_news_a">千亿金融平台团贷网炸雷，实控人自首，牛股停牌，波及20多万投资人</a>
+										<p>团贷网涉嫌非法吸收公众存款被立案 二月末借贷余额超145亿元。</p>
+										<!--一排三个-->
+										<div class="hot_news_three">
+											<p class="pull-left"><img src="../img/hot_news1.jpg"/> i黑马</p>
+											<p class="pull-left hot_news_time"><span class="glyphicon glyphicon-time"></span> 2019-03-28 17:15</p>
+											<p class="pull-left"><span class="glyphicon glyphicon-thumbs-up"></span> 40</p>
+										</div>
+										<!--一排三个-->
+									</div>
+									<!--新闻字-->
+								</div>
+								<!--row新闻new-->
+							</div>
+							<!--每一行新闻盒子-->
+							<!--每一行新闻盒子-->
+							<div class="hot_news">
+								<!--row新闻new-->
+								<div class="row">
+									<!--新闻图-->
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<img src="../img/hot_news (5).jpg" class="img-responsive center-block" style="height: 160px;"/>
+									</div>
+									<!--新闻图-->
+									<!--新闻字-->
+									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 hot_news_col">
+										<a href="#" class="hot_news_a">千亿金融平台团贷网炸雷，实控人自首，牛股停牌，波及20多万投资人</a>
+										<p>团贷网涉嫌非法吸收公众存款被立案 二月末借贷余额超145亿元。</p>
+										<!--一排三个-->
+										<div class="hot_news_three">
+											<p class="pull-left"><img src="../img/hot_news2.png"/> i黑马</p>
+											<p class="pull-left hot_news_time"><span class="glyphicon glyphicon-time"></span> 2019-03-28 17:15</p>
+											<p class="pull-left"><span class="glyphicon glyphicon-thumbs-up"></span> 40</p>
+										</div>
+										<!--一排三个-->
+									</div>
+									<!--新闻字-->
+								</div>
+								<!--row新闻new-->
+							</div>
+							<!--每一行新闻盒子-->
+							<!--每一行新闻盒子-->
+							<div class="hot_news">
+								<!--row新闻new-->
+								<div class="row">
+									<!--新闻图-->
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<img src="../img/hot_news (1).jpg" class="img-responsive center-block" style="height: 160px;"/>
+									</div>
+									<!--新闻图-->
+									<!--新闻字-->
+									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 hot_news_col">
+										<a href="#" class="hot_news_a">千亿金融平台团贷网炸雷，实控人自首，牛股停牌，波及20多万投资人</a>
+										<p>团贷网涉嫌非法吸收公众存款被立案 二月末借贷余额超145亿元。</p>
+										<!--一排三个-->
+										<div class="hot_news_three">
+											<p class="pull-left"><img src="../img/hot_news1.jpg"/> i黑马</p>
+											<p class="pull-left hot_news_time"><span class="glyphicon glyphicon-time"></span> 2019-03-28 17:15</p>
+											<p class="pull-left"><span class="glyphicon glyphicon-thumbs-up"></span> 40</p>
+										</div>
+										<!--一排三个-->
+									</div>
+									<!--新闻字-->
+								</div>
+								<!--row新闻new-->
+							</div>
+							<!--每一行新闻盒子-->
+							<!--每一行新闻盒子-->
+							<div class="hot_news">
+								<!--row新闻new-->
+								<div class="row">
+									<!--新闻图-->
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<img src="../img/hot_news (2).jpg" class="img-responsive center-block" style="height: 160px;"/>
+									</div>
+									<!--新闻图-->
+									<!--新闻字-->
+									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 hot_news_col">
+										<a href="#" class="hot_news_a">千亿金融平台团贷网炸雷，实控人自首，牛股停牌，波及20多万投资人</a>
+										<p>团贷网涉嫌非法吸收公众存款被立案 二月末借贷余额超145亿元。</p>
+										<!--一排三个-->
+										<div class="hot_news_three">
+											<p class="pull-left"><img src="../img/hot_news2.png"/> i黑马</p>
+											<p class="pull-left hot_news_time"><span class="glyphicon glyphicon-time"></span> 2019-03-28 17:15</p>
+											<p class="pull-left"><span class="glyphicon glyphicon-thumbs-up"></span> 40</p>
+										</div>
+										<!--一排三个-->
+									</div>
+									<!--新闻字-->
+								</div>
+								<!--row新闻new-->
+							</div>
+							<!--每一行新闻盒子-->
+							<!--每一行新闻盒子-->
+							<div class="hot_news">
+								<!--row新闻new-->
+								<div class="row">
+									<!--新闻图-->
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<img src="../img/hot_news (3).jpg" class="img-responsive center-block" style="height: 160px;"/>
+									</div>
+									<!--新闻图-->
+									<!--新闻字-->
+									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 hot_news_col">
+										<a href="#" class="hot_news_a">千亿金融平台团贷网炸雷，实控人自首，牛股停牌，波及20多万投资人</a>
+										<p>团贷网涉嫌非法吸收公众存款被立案 二月末借贷余额超145亿元。</p>
+										<!--一排三个-->
+										<div class="hot_news_three">
+											<p class="pull-left"><img src="../img/hot_news2.png"/> i黑马</p>
+											<p class="pull-left hot_news_time"><span class="glyphicon glyphicon-time"></span> 2019-03-28 17:15</p>
+											<p class="pull-left"><span class="glyphicon glyphicon-thumbs-up"></span> 40</p>
+										</div>
+										<!--一排三个-->
+									</div>
+									<!--新闻字-->
+								</div>
+								<!--row新闻new-->
+							</div>
+							<!--每一行新闻盒子-->
+							<!--每一行新闻盒子-->
+							<div class="hot_news">
+								<!--row新闻new-->
+								<div class="row">
+									<!--新闻图-->
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<img src="../img/hot_news (4).jpg" class="img-responsive center-block" style="height: 160px;"/>
+									</div>
+									<!--新闻图-->
+									<!--新闻字-->
+									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 hot_news_col">
+										<a href="#" class="hot_news_a">千亿金融平台团贷网炸雷，实控人自首，牛股停牌，波及20多万投资人</a>
+										<p>团贷网涉嫌非法吸收公众存款被立案 二月末借贷余额超145亿元。</p>
+										<!--一排三个-->
+										<div class="hot_news_three">
+											<p class="pull-left"><img src="../img/hot_news1.jpg"/> i黑马</p>
+											<p class="pull-left hot_news_time"><span class="glyphicon glyphicon-time"></span> 2019-03-28 17:15</p>
+											<p class="pull-left"><span class="glyphicon glyphicon-thumbs-up"></span> 40</p>
+										</div>
+										<!--一排三个-->
+									</div>
+									<!--新闻字-->
+								</div>
+								<!--row新闻new-->
+							</div>
+							<!--每一行新闻盒子-->
+							<!--每一行新闻盒子-->
+							<div class="hot_news">
+								<!--row新闻new-->
+								<div class="row">
+									<!--新闻图-->
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<img src="../img/hot_news (5).jpg" class="img-responsive center-block" style="height: 160px;"/>
+									</div>
+									<!--新闻图-->
+									<!--新闻字-->
+									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 hot_news_col">
+										<a href="#" class="hot_news_a">千亿金融平台团贷网炸雷，实控人自首，牛股停牌，波及20多万投资人</a>
+										<p>团贷网涉嫌非法吸收公众存款被立案 二月末借贷余额超145亿元。</p>
+										<!--一排三个-->
+										<div class="hot_news_three">
+											<p class="pull-left"><img src="../img/hot_news2.png"/> i黑马</p>
+											<p class="pull-left hot_news_time"><span class="glyphicon glyphicon-time"></span> 2019-03-28 17:15</p>
+											<p class="pull-left"><span class="glyphicon glyphicon-thumbs-up"></span> 40</p>
+										</div>
+										<!--一排三个-->
+									</div>
+									<!--新闻字-->
+								</div>
+								<!--row新闻new-->
+							</div>
+							<!--每一行新闻盒子-->
+					<!--*********************************************-->				
+							<!--每一行新闻盒子-->
+							<div class="hot_news hot_news_hide">
+								<!--row新闻new-->
+								<div class="row">
+									<!--新闻图-->
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<img src="../img/hot_news (1).jpg" class="img-responsive center-block" style="height: 160px;"/>
+									</div>
+									<!--新闻图-->
+									<!--新闻字-->
+									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 hot_news_col">
+										<a href="#" class="hot_news_a">千亿金融平台团贷网炸雷，实控人自首，牛股停牌，波及20多万投资人</a>
+										<p>团贷网涉嫌非法吸收公众存款被立案 二月末借贷余额超145亿元。</p>
+										<!--一排三个-->
+										<div class="hot_news_three">
+											<p class="pull-left"><img src="../img/hot_news1.jpg"/> i黑马</p>
+											<p class="pull-left hot_news_time"><span class="glyphicon glyphicon-time"></span> 2019-03-28 17:15</p>
+											<p class="pull-left"><span class="glyphicon glyphicon-thumbs-up"></span> 40</p>
+										</div>
+										<!--一排三个-->
+									</div>
+									<!--新闻字-->
+								</div>
+								<!--row新闻new-->
+							</div>
+							<!--每一行新闻盒子-->
+							<!--每一行新闻盒子-->
+							<div class="hot_news hot_news_hide">
+								<!--row新闻new-->
+								<div class="row">
+									<!--新闻图-->
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<img src="../img/hot_news (1).jpg" class="img-responsive center-block" style="height: 160px;"/>
+									</div>
+									<!--新闻图-->
+									<!--新闻字-->
+									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 hot_news_col">
+										<a href="#" class="hot_news_a">千亿金融平台团贷网炸雷，实控人自首，牛股停牌，波及20多万投资人</a>
+										<p>团贷网涉嫌非法吸收公众存款被立案 二月末借贷余额超145亿元。</p>
+										<!--一排三个-->
+										<div class="hot_news_three">
+											<p class="pull-left"><img src="../img/hot_news2.png"/> i黑马</p>
+											<p class="pull-left hot_news_time"><span class="glyphicon glyphicon-time"></span> 2019-03-28 17:15</p>
+											<p class="pull-left"><span class="glyphicon glyphicon-thumbs-up"></span> 40</p>
+										</div>
+										<!--一排三个-->
+									</div>
+									<!--新闻字-->
+								</div>
+								<!--row新闻new-->
+							</div>
+							<!--每一行新闻盒子-->
+							<!--每一行新闻盒子-->
+							<div class="hot_news hot_news_hide">
+								<!--row新闻new-->
+								<div class="row">
+									<!--新闻图-->
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<img src="../img/hot_news (1).jpg" class="img-responsive center-block" style="height: 160px;"/>
+									</div>
+									<!--新闻图-->
+									<!--新闻字-->
+									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 hot_news_col">
+										<a href="#" class="hot_news_a">千亿金融平台团贷网炸雷，实控人自首，牛股停牌，波及20多万投资人</a>
+										<p>团贷网涉嫌非法吸收公众存款被立案 二月末借贷余额超145亿元。</p>
+										<!--一排三个-->
+										<div class="hot_news_three">
+											<p class="pull-left"><img src="../img/hot_news2.png"/> i黑马</p>
+											<p class="pull-left hot_news_time"><span class="glyphicon glyphicon-time"></span> 2019-03-28 17:15</p>
+											<p class="pull-left"><span class="glyphicon glyphicon-thumbs-up"></span> 40</p>
+										</div>
+										<!--一排三个-->
+									</div>
+									<!--新闻字-->
+								</div>
+								<!--row新闻new-->
+							</div>
+							<!--每一行新闻盒子-->
+							<!--每一行新闻盒子-->
+							<div class="hot_news hot_news_hide">
+								<!--row新闻new-->
+								<div class="row">
+									<!--新闻图-->
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<img src="../img/hot_news (1).jpg" class="img-responsive center-block" style="height: 160px;"/>
+									</div>
+									<!--新闻图-->
+									<!--新闻字-->
+									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 hot_news_col">
+										<a href="#" class="hot_news_a">千亿金融平台团贷网炸雷，实控人自首，牛股停牌，波及20多万投资人</a>
+										<p>团贷网涉嫌非法吸收公众存款被立案 二月末借贷余额超145亿元。</p>
+										<!--一排三个-->
+										<div class="hot_news_three">
+											<p class="pull-left"><img src="../img/hot_news1.jpg"/> i黑马</p>
+											<p class="pull-left hot_news_time"><span class="glyphicon glyphicon-time"></span> 2019-03-28 17:15</p>
+											<p class="pull-left"><span class="glyphicon glyphicon-thumbs-up"></span> 40</p>
+										</div>
+										<!--一排三个-->
+									</div>
+									<!--新闻字-->
+								</div>
+								<!--row新闻new-->
+							</div>
+							<!--每一行新闻盒子-->
+							<!--每一行新闻盒子-->
+							<div class="hot_news hot_news_hide">
+								<!--row新闻new-->
+								<div class="row">
+									<!--新闻图-->
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+										<img src="../img/hot_news (1).jpg" class="img-responsive center-block" style="height: 160px;"/>
+									</div>
+									<!--新闻图-->
+									<!--新闻字-->
+									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 hot_news_col">
+										<a href="#" class="hot_news_a">千亿金融平台团贷网炸雷，实控人自首，牛股停牌，波及20多万投资人</a>
+										<p>团贷网涉嫌非法吸收公众存款被立案 二月末借贷余额超145亿元。</p>
+										<!--一排三个-->
+										<div class="hot_news_three">
+											<p class="pull-left"><img src="../img/hot_news2.png"/> i黑马</p>
+											<p class="pull-left hot_news_time"><span class="glyphicon glyphicon-time"></span> 2019-03-28 17:15</p>
+											<p class="pull-left"><span class="glyphicon glyphicon-thumbs-up"></span> 40</p>
+										</div>
+										<!--一排三个-->
+									</div>
+									<!--新闻字-->
+								</div>
+								<!--row新闻new-->
+							</div>
+							<!--每一行新闻盒子-->	
+					<!--*********************************************-->
 						</div>
-						<!--详情新闻-->
+						<!--详情新闻盒子-->
+						<!--加在更多-->
+						<div class="hot_more">
+							<p>加载协会</p>
+						</div>
+						<!--加在更多-->
                 	</div>
                 	<!--左列-->
                 	<!--右列-->
                 	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 right_col">
                 		<!--滚动的字-->
                 		<div class="scrollbox">
+                			<p class="kuaiXun"><span></span>快讯</p>
 						    <div id="scrollDiv">
-						    	<p class="kuaiXun"><span></span>快讯</p>
 						        <ul class="hot_scroll_zi">
 						            <li><p><a href="#" class="linktit">腾讯音乐直接入股酷我音乐，谢国民卸任董事长</a></p> <div>2019-3-27 15:22</div></li>
 						            <li><p><a href="#" class="linktit">葡萄英语完成1.5亿元融资</a></p> <div>2019-3-27 15:03</div></li>
@@ -263,6 +644,29 @@
 		</main>
 		<!--主体-->
 		
+		<!--定位盒子-->
+		<div class="fixed_bai">
+			<ul>
+				<li class="fixed_write">
+					<span class="glyphicon glyphicon-edit"></span>
+					<div class="advise">
+						意见<br />反馈
+					</div>
+				</li>
+				<li class="fixed_ma">
+					<span class="glyphicon glyphicon-qrcode"></span>
+					<img src="../img/fixed_ma.png" alt="" class="fixed_img"/>
+				</li>
+				<li class="fixed_write">
+					<span class="glyphicon glyphicon-menu-up"></span>
+					<div class="advise">
+						<a href="#">返回<br />顶部</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--定位盒子-->
+		
 		<!--尾部-->
 		<footer role="contentinfo">
 			<div class="container">
@@ -274,32 +678,32 @@
 						<!--内container-->
 						<!--<div class="container">-->
 		                    <div class="row">
-		                        <div class="pull-left col-xs-3 footer_title col-lg-1 col-md-2">旗下品牌</div>
-		                        <div class="pull-left col-xs-9 col-lg-11 col-md-10">
+		                        <div class="pull-left col-xs-3 footer_title col-lg-2 col-md-2">旗下品牌</div>
+		                        <div class="pull-left col-xs-9 col-lg-10 col-md-10">
 		                            <a href="#" target="_blank">黑马学吧</a>
 		                            <a href="#" target="_blank">创业家</a>
 		                            <a href="#" target="_blank">黑马基金</a>
 		                        </div>
 		                    </div>
 		                    <div class="row">
-		                        <div class="pull-left col-xs-3 footer_title col-lg-1 col-md-2">关于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-		                        <div class="pull-left col-xs-9 col-lg-11 col-md-10">
+		                        <div class="pull-left col-xs-3 footer_title col-lg-2 col-md-2">关于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+		                        <div class="pull-left col-xs-9 col-lg-10 col-md-10">
 		                            <a href="#" target="_blank">关于黑马</a>
 		                            <a href="#" target="_blank">意见反馈</a>
 		                            <a href="#" target="_blank">免责声明</a>
 		                        </div>
 		                    </div><br />
 		                    <div class="row">
-		                        <div class="pull-left col-xs-3 footer_title col-lg-1 col-md-2">合作伙伴</div>
-		                        <div class="pull-left col-xs-9 col-lg-11 col-md-10">
+		                        <div class="pull-left col-xs-3 footer_title col-lg-2 col-md-2">合作伙伴</div>
+		                        <div class="pull-left col-xs-9 col-lg-10 col-md-10">
 		                            <a href="#" target="_blank"><img src="../img/footmlogo1.png"></a>
 		                            <a href="#" target="_blank"><img src="../img/footmlogo2.png"></a>
 		                            <a href="#" target="_blank"><img src="../img/footmlogo3.png"></a>
 		                        </div>
 		                    </div><br />
 		                    <div class="row">
-		                        <div class="pull-left col-xs-3 footer_title col-lg-1 col-md-2">友情链接</div>
-		                        <div class="pull-left col-xs-9 col-lg-11 col-md-10">
+		                        <div class="pull-left col-xs-3 footer_title col-lg-2 col-md-2">友情链接</div>
+		                        <div class="pull-left col-xs-9 col-lg-10 col-md-10">
 		                            <a href="#" target="_blank">腾讯财经</a>
 		                            <a href="#" target="_blank">站长之家</a>
 		                            <a href="#" target="_blank">黑马大赛</a>

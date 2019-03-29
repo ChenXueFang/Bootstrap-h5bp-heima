@@ -32,14 +32,31 @@
 				<!--导航条内容居中container-->
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle nav-left" data-toggle="collapse" data-target=".navbar-collapse">
-		                    <span class="icon-bar"></span>
-		                    <span class="icon-bar"></span>
-		                    <span class="icon-bar"></span>
-		                </button>
-						<a class="navbar-brand nav_logo" href="#">
-							<img src="img/logo.png">
+						<!--大的logo图-->
+						<a class="navbar-brand nav_logo visible-lg visible-md pull-left" href="#">
+							<img src="img/logo.png" class="">
 						</a>
+						<!--大的logo图-->
+						<!--row缩小时的三个-->
+						<div class="row">
+							<div class="col-sm-4 col-xs-4 visible-sm visible-xs">
+								<button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-collapse">
+				                    <span class="icon-bar"></span>
+				                    <span class="icon-bar"></span>
+				                    <span class="icon-bar"></span>
+				                </button>
+							</div>
+							<div class="col-sm-4 col-xs-4 visible-sm visible-xs">
+								<a class="navbar-brand nav_logo" href="#">
+									<img src="img/logo.png" class="visible-lg visible-md pull-left">
+									<div class="small_logo"><img src="img/logo.png"  style="width: 90px;"></div>
+								</a>
+							</div>
+							<div class="col-sm-4 col-xs-4 visible-sm visible-xs">
+								<div class="navbar-brand"><span class="glyphicon glyphicon-search"></span></div>
+							</div>
+						</div>
+						<!--row缩小时的三个-->
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
@@ -63,20 +80,17 @@
 							</li>
 							<li><a href="#">马脑</a></li>
 							<li><a href="#">创业公司</a></li>
-							<li><a href="#">活动</a></li>
-							<li><a href="#">热点</a></li>
+							<li><a href="html/activity.html">活动</a></li>
+							<li><a href="html/hot.html">热点</a></li>
 						</ul>
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#" id="nav_enter">登录/注册</a></li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right">
-							<form class="navbar-form">
+						<ul class="nav navbar-nav pull-right">
+							<li><form class="navbar-form">
 						        <div class="form-group form_box">
 						          	<input type="text" class="form-control form_button" placeholder="搜索"><span class="glyphicon glyphicon-search"></span>
 						        </div>
-						    </form>
+						    </form></li>
+							<li><a href="#" id="nav_enter">登录/注册</a></li>
 						</ul>
-						
 					</div>
 				</div>
 				<!--导航条内容居中container-->
@@ -164,25 +178,31 @@
 					<!--列-->
 					<div class="col-lg-12 col-md-12 col-lg-12 serve_three">
 						<div class="row serve_nei_row">
-							<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 serve_col">
-								<img src="img/cyfw1.jpg" class="img-responsive center-block" style="width: 100%;"/>
-								<div class="serve_zi_box">
-									<div>黑马大赛</div>
-									<p>发现·城市未来独角兽</p>
+							<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+								<div class="serve_col">
+									<img src="img/cyfw1.jpg" class="img-responsive center-block" style="width: 100%;"/>
+									<div class="serve_zi_box">
+										<div>黑马大赛</div>
+										<p>发现·城市未来独角兽</p>
+									</div>
 								</div>
 							</div>
-							<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 serve_col">
-								<img src="img/cyfw3.jpg" class="img-responsive center-block"  style="width: 100%;"/>
-								<div class="serve_zi_box">
-									<div>黑马大赛</div>
-									<p>发现·城市未来独角兽</p>
+							<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+								<div class="serve_col">
+									<img src="img/cyfw3.jpg" class="img-responsive center-block"  style="width: 100%;"/>
+									<div class="serve_zi_box">
+										<div>黑马大赛</div>
+										<p>发现·城市未来独角兽</p>
+									</div>
 								</div>
 							</div>
-							<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 serve_col">
-								<img src="img/cyfw2.jpg" class="img-responsive center-block"  style="width: 100%;"/>
-								<div class="serve_zi_box">
-									<div>黑马大赛</div>
-									<p>发现·城市未来独角兽</p>
+							<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+								<div class="serve_col">
+									<img src="img/cyfw2.jpg" class="img-responsive center-block"  style="width: 100%;"/>
+									<div class="serve_zi_box">
+										<div>黑马大赛</div>
+										<p>发现·城市未来独角兽</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -319,6 +339,12 @@
 		</main>
 		<!--主体-->
 
+		<!--右下角固定客服咨询-->
+		<div class="fixed_ziXun">
+			<img src="img/fixed_right.png" alt="" />
+		</div>
+		<!--右下角固定客服咨询-->
+
 		<!--尾部-->
 		<footer role="contentinfo">
 			<div class="container">
@@ -329,32 +355,32 @@
 					<div class="col-lg-10 col-md-10 col-sm-12 footer_col_zi">
 						<!--<div class="container">-->
 		                    <div class="row">
-		                        <div class="pull-left col-xs-3 footer_title col-lg-1 col-md-2">旗下品牌</div>
-		                        <div class="pull-left col-xs-9 col-lg-11 col-md-10">
+		                        <div class="pull-left col-xs-3 footer_title col-lg-2 col-md-2">旗下品牌</div>
+		                        <div class="pull-left col-xs-9 col-lg-10 col-md-10">
 		                            <a href="#" target="_blank">黑马学吧</a>
 		                            <a href="#" target="_blank">创业家</a>
 		                            <a href="#" target="_blank">黑马基金</a>
 		                        </div>
 		                    </div>
 		                    <div class="row">
-		                        <div class="pull-left col-xs-3 footer_title col-lg-1 col-md-2">关于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-		                        <div class="pull-left col-xs-9 col-lg-11 col-md-10">
+		                        <div class="pull-left col-xs-3 footer_title col-lg-2 col-md-2">关于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+		                        <div class="pull-left col-xs-9 col-lg-10 col-md-10">
 		                            <a href="#" target="_blank">关于黑马</a>
 		                            <a href="#" target="_blank">意见反馈</a>
 		                            <a href="#" target="_blank">免责声明</a>
 		                        </div>
 		                    </div><br />
 		                    <div class="row">
-		                        <div class="pull-left col-xs-3 footer_title col-lg-1 col-md-2">合作伙伴</div>
-		                        <div class="pull-left col-xs-9 col-lg-11 col-md-10">
+		                        <div class="pull-left col-xs-3 footer_title col-lg-2 col-md-2">合作伙伴</div>
+		                        <div class="pull-left col-xs-9 col-lg-10 col-md-10">
 		                            <a href="#" target="_blank"><img src="img/footmlogo1.png"></a>
 		                            <a href="#" target="_blank"><img src="img/footmlogo2.png"></a>
 		                            <a href="#" target="_blank"><img src="img/footmlogo3.png"></a>
 		                        </div>
 		                    </div><br />
 		                    <div class="row">
-		                        <div class="pull-left col-xs-3 footer_title col-lg-1 col-md-2">友情链接</div>
-		                        <div class="pull-left col-xs-9 col-lg-11 col-md-10">
+		                        <div class="pull-left col-xs-3 footer_title col-lg-2 col-md-2">友情链接</div>
+		                        <div class="pull-left col-xs-9 col-lg-10 col-md-10">
 		                            <a href="#" target="_blank">腾讯财经</a>
 		                            <a href="#" target="_blank">站长之家</a>
 		                            <a href="#" target="_blank">黑马大赛</a>

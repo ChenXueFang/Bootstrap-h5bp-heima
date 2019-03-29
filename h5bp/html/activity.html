@@ -17,18 +17,35 @@
 				<!--导航条内容居中container-->
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle nav-left" data-toggle="collapse" data-target=".navbar-collapse">
-		                    <span class="icon-bar"></span>
-		                    <span class="icon-bar"></span>
-		                    <span class="icon-bar"></span>
-		                </button>
-						<a class="navbar-brand nav_logo" href="#">
-							<img src="../img/logo.png">
+						<!--大的logo图-->
+						<a class="navbar-brand nav_logo visible-lg visible-md pull-left" href="#">
+							<img src="../img/logo.png" class="">
 						</a>
+						<!--大的logo图-->
+						<!--row缩小时的三个-->
+						<div class="row">
+							<div class="col-sm-4 col-xs-4 visible-sm visible-xs">
+								<button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-collapse">
+				                    <span class="icon-bar"></span>
+				                    <span class="icon-bar"></span>
+				                    <span class="icon-bar"></span>
+				                </button>
+							</div>
+							<div class="col-sm-4 col-xs-4 visible-sm visible-xs">
+								<a class="navbar-brand nav_logo" href="#">
+									<img src="../img/logo.png" class="visible-lg visible-md pull-left">
+									<div class="small_logo"><img src="../img/logo.png"  style="width: 90px;"></div>
+								</a>
+							</div>
+							<div class="col-sm-4 col-xs-4 visible-sm visible-xs">
+								<div class="navbar-brand"><span class="glyphicon glyphicon-search"></span></div>
+							</div>
+						</div>
+						<!--row缩小时的三个-->
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
-							<li><a href="#">热点</a></li>
+							<li class="active"><a href="#">产品升级 <span class="sr-only">(current)</span></a></li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="heiMa">黑马学院<b class="caret"></b></a>
 								<ul class="dropdown-menu" id="heiMa_show">
@@ -47,18 +64,18 @@
 								</ul>
 							</li>
 							<li><a href="#">马脑</a></li>
-							<li><a href="#">创业公司</a></li>
-							<li class="active"><a href="#">活动 <span class="sr-only">(current)</span></a></li>
-							<li><a href="#">产业升级</a></li>
+							<li><a href="../index.html">创业公司</a></li>
+							<li><a href="#">活动</a></li>
+							<li><a href="html/hot.html">热点</a></li>
 						</ul>
-						<ul class="nav navbar-nav navbar-right">
+						<ul class="nav navbar-nav pull-right">
+							<li><form class="navbar-form">
+						        <div class="form-group form_box">
+						          	<input type="text" class="form-control form_button" placeholder="搜索"><span class="glyphicon glyphicon-search"></span>
+						        </div>
+						    </form></li>
 							<li><a href="#" id="nav_enter">登录/注册</a></li>
 						</ul>
-						<form class="navbar-form navbar-right">
-					        <div class="form-group form_box">
-					          	<input type="text" class="form-control form_button" placeholder="搜索"><span class="glyphicon glyphicon-search"></span>
-					        </div>
-					    </form>
 					</div>
 				</div>
 				<!--导航条内容居中container-->
@@ -75,92 +92,53 @@
 				<div class="row">
 					<!--列-->
 					<div class="col-lg-6 col-md-6 col">
-						<img class="img-responsive" src="../img/activity1.jpg" style="width: 100%;height: 278px;"/>
-						<!--字的大盒子-->
-						<div class="img_zi">
-							<!--字的内容框-->
-							<div class="img_zi_con">
-								<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
-								<!--左边的字-->
-								<div class="img_zi_left pull-left">
-									<p>长期</p>
-									<p>上海</p>
+						<!--一个活动盒子-->
+						<div class="activity_box">
+							<img class="img-responsive" src="../img/activity1.jpg" style="width: 100%;height: 278px;"/>
+							<!--字的大盒子-->
+							<div class="img_zi">
+								<!--字的内容框-->
+								<div class="img_zi_con">
+									<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
+									<!--左边的字-->
+									<div class="img_zi_left pull-left">
+										<p>长期</p>
+										<p>上海</p>
+									</div>
+									<!--右边按钮-->
+									<input type="button" class="btn btn-primary pull-right" value="立即报名" />
+									<!--右边按钮-->
 								</div>
-								<!--右边按钮-->
-								<input type="button" class="btn btn-primary pull-right" value="立即报名" />
-								<!--右边按钮-->
+								<!--字的内容框-->
 							</div>
-							<!--字的内容框-->
+							<!--字的大盒子-->
 						</div>
-						<!--字的大盒子-->
+						<!--一个活动盒子-->
 					</div>
 					<!--列-->
 					<div class="col-lg-6 col-md-6 col">
-						<img class="img-responsive" src="../img/activity2.jpg" style="width: 100%;height: 278px;" />
-						<!--字的大盒子-->
-						<div class="img_zi">
-							<!--字的内容框-->
-							<div class="img_zi_con">
-								<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
-								<!--左边的字-->
-								<div class="img_zi_left pull-left">
-									<p>长期</p>
-									<p>上海</p>
+						<!--一个活动盒子-->
+						<div class="activity_box">
+							<img class="img-responsive" src="../img/activity2.jpg" style="width: 100%;height: 278px;"/>
+							<!--字的大盒子-->
+							<div class="img_zi">
+								<!--字的内容框-->
+								<div class="img_zi_con">
+									<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
+									<!--左边的字-->
+									<div class="img_zi_left pull-left">
+										<p>长期</p>
+										<p>上海</p>
+									</div>
+									<!--右边按钮-->
+									<input type="button" class="btn btn-primary pull-right" value="立即报名" />
+									<!--右边按钮-->
 								</div>
-								<!--右边按钮-->
-								<input type="button" class="btn btn-primary pull-right" value="立即报名" />
-								<!--右边按钮-->
+								<!--字的内容框-->
 							</div>
-							<!--字的内容框-->
+							<!--字的大盒子-->
 						</div>
-						<!--字的大盒子-->
-					</div>
-					<!--列-->
-				</div>
-				<!--行-->
-				<!--行-->
-				<div class="row">
-					<!--列-->
-					<div class="col-lg-6 col-md-6 col">
-						<img class="img-responsive" src="../img/activity3.jpg" style="width: 100%;height: 278px;"/>
-						<!--字的大盒子-->
-						<div class="img_zi">
-							<!--字的内容框-->
-							<div class="img_zi_con">
-								<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
-								<!--左边的字-->
-								<div class="img_zi_left pull-left">
-									<p>长期</p>
-									<p>上海</p>
-								</div>
-								<!--右边按钮-->
-								<input type="button" class="btn btn-primary pull-right" value="立即报名" />
-								<!--右边按钮-->
-							</div>
-							<!--字的内容框-->
-						</div>
-						<!--字的大盒子-->
-					</div>
-					<!--列-->
-					<div class="col-lg-6 col-md-6 col">
-						<img class="img-responsive" src="../img/activity4.jpg" style="width: 100%;height: 278px;" />
-						<!--字的大盒子-->
-						<div class="img_zi">
-							<!--字的内容框-->
-							<div class="img_zi_con">
-								<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
-								<!--左边的字-->
-								<div class="img_zi_left pull-left">
-									<p>长期</p>
-									<p>上海</p>
-								</div>
-								<!--右边按钮-->
-								<input type="button" class="btn btn-primary pull-right" value="立即报名" />
-								<!--右边按钮-->
-							</div>
-							<!--字的内容框-->
-						</div>
-						<!--字的大盒子-->
+						<!--一个活动盒子-->
 					</div>
 					<!--列-->
 				</div>
@@ -169,92 +147,53 @@
 				<div class="row">
 					<!--列-->
 					<div class="col-lg-6 col-md-6 col">
-						<img class="img-responsive" src="../img/activity5.jpg" style="width: 100%;height: 278px;"/>
-						<!--字的大盒子-->
-						<div class="img_zi">
-							<!--字的内容框-->
-							<div class="img_zi_con">
-								<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
-								<!--左边的字-->
-								<div class="img_zi_left pull-left">
-									<p>长期</p>
-									<p>上海</p>
+						<!--一个活动盒子-->
+						<div class="activity_box">
+							<img class="img-responsive" src="../img/activity3.jpg" style="width: 100%;height: 278px;"/>
+							<!--字的大盒子-->
+							<div class="img_zi">
+								<!--字的内容框-->
+								<div class="img_zi_con">
+									<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
+									<!--左边的字-->
+									<div class="img_zi_left pull-left">
+										<p>长期</p>
+										<p>上海</p>
+									</div>
+									<!--右边按钮-->
+									<input type="button" class="btn btn-primary pull-right" value="立即报名" />
+									<!--右边按钮-->
 								</div>
-								<!--右边按钮-->
-								<input type="button" class="btn btn-primary pull-right" value="立即报名" />
-								<!--右边按钮-->
+								<!--字的内容框-->
 							</div>
-							<!--字的内容框-->
+							<!--字的大盒子-->
 						</div>
-						<!--字的大盒子-->
+						<!--一个活动盒子-->
 					</div>
 					<!--列-->
 					<div class="col-lg-6 col-md-6 col">
-						<img class="img-responsive" src="../img/activity2.jpg" style="width: 100%;height: 278px;" />
-						<!--字的大盒子-->
-						<div class="img_zi">
-							<!--字的内容框-->
-							<div class="img_zi_con">
-								<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
-								<!--左边的字-->
-								<div class="img_zi_left pull-left">
-									<p>长期</p>
-									<p>上海</p>
+						<!--一个活动盒子-->
+						<div class="activity_box">
+							<img class="img-responsive" src="../img/activity4.jpg" style="width: 100%;height: 278px;"/>
+							<!--字的大盒子-->
+							<div class="img_zi">
+								<!--字的内容框-->
+								<div class="img_zi_con">
+									<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
+									<!--左边的字-->
+									<div class="img_zi_left pull-left">
+										<p>长期</p>
+										<p>上海</p>
+									</div>
+									<!--右边按钮-->
+									<input type="button" class="btn btn-primary pull-right" value="立即报名" />
+									<!--右边按钮-->
 								</div>
-								<!--右边按钮-->
-								<input type="button" class="btn btn-primary pull-right" value="立即报名" />
-								<!--右边按钮-->
+								<!--字的内容框-->
 							</div>
-							<!--字的内容框-->
+							<!--字的大盒子-->
 						</div>
-						<!--字的大盒子-->
-					</div>
-					<!--列-->
-				</div>
-				<!--行-->
-				<!--行-->
-				<div class="row">
-					<!--列-->
-					<div class="col-lg-6 col-md-6 col">
-						<img class="img-responsive" src="../img/activity3.jpg" style="width: 100%;height: 278px;"/>
-						<!--字的大盒子-->
-						<div class="img_zi">
-							<!--字的内容框-->
-							<div class="img_zi_con">
-								<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
-								<!--左边的字-->
-								<div class="img_zi_left pull-left">
-									<p>长期</p>
-									<p>上海</p>
-								</div>
-								<!--右边按钮-->
-								<input type="button" class="btn btn-primary pull-right" value="立即报名" />
-								<!--右边按钮-->
-							</div>
-							<!--字的内容框-->
-						</div>
-						<!--字的大盒子-->
-					</div>
-					<!--列-->
-					<div class="col-lg-6 col-md-6 col">
-						<img class="img-responsive" src="../img/activity4.jpg" style="width: 100%;height: 278px;" />
-						<!--字的大盒子-->
-						<div class="img_zi">
-							<!--字的内容框-->
-							<div class="img_zi_con">
-								<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
-								<!--左边的字-->
-								<div class="img_zi_left pull-left">
-									<p>长期</p>
-									<p>上海</p>
-								</div>
-								<!--右边按钮-->
-								<input type="button" class="btn btn-primary pull-right" value="立即报名" />
-								<!--右边按钮-->
-							</div>
-							<!--字的内容框-->
-						</div>
-						<!--字的大盒子-->
+						<!--一个活动盒子-->
 					</div>
 					<!--列-->
 				</div>
@@ -263,45 +202,163 @@
 				<div class="row">
 					<!--列-->
 					<div class="col-lg-6 col-md-6 col">
-						<img class="img-responsive" src="../img/activity4.jpg" style="width: 100%;height: 278px;"/>
-						<!--字的大盒子-->
-						<div class="img_zi">
-							<!--字的内容框-->
-							<div class="img_zi_con">
-								<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
-								<!--左边的字-->
-								<div class="img_zi_left pull-left">
-									<p>长期</p>
-									<p>上海</p>
+						<!--一个活动盒子-->
+						<div class="activity_box">
+							<img class="img-responsive" src="../img/activity5.jpg" style="width: 100%;height: 278px;"/>
+							<!--字的大盒子-->
+							<div class="img_zi">
+								<!--字的内容框-->
+								<div class="img_zi_con">
+									<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
+									<!--左边的字-->
+									<div class="img_zi_left pull-left">
+										<p>长期</p>
+										<p>上海</p>
+									</div>
+									<!--右边按钮-->
+									<input type="button" class="btn btn-primary pull-right" value="立即报名" />
+									<!--右边按钮-->
 								</div>
-								<!--右边按钮-->
-								<input type="button" class="btn btn-primary pull-right" value="立即报名" />
-								<!--右边按钮-->
+								<!--字的内容框-->
 							</div>
-							<!--字的内容框-->
+							<!--字的大盒子-->
 						</div>
-						<!--字的大盒子-->
+						<!--一个活动盒子-->
 					</div>
 					<!--列-->
 					<div class="col-lg-6 col-md-6 col">
-						<img class="img-responsive" src="../img/activity3.jpg" style="width: 100%;height: 278px;" />
-						<!--字的大盒子-->
-						<div class="img_zi">
-							<!--字的内容框-->
-							<div class="img_zi_con">
-								<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
-								<!--左边的字-->
-								<div class="img_zi_left pull-left">
-									<p>长期</p>
-									<p>上海</p>
+						<!--一个活动盒子-->
+						<div class="activity_box">
+							<img class="img-responsive" src="../img/activity1.jpg" style="width: 100%;height: 278px;"/>
+							<!--字的大盒子-->
+							<div class="img_zi">
+								<!--字的内容框-->
+								<div class="img_zi_con">
+									<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
+									<!--左边的字-->
+									<div class="img_zi_left pull-left">
+										<p>长期</p>
+										<p>上海</p>
+									</div>
+									<!--右边按钮-->
+									<input type="button" class="btn btn-primary pull-right" value="立即报名" />
+									<!--右边按钮-->
 								</div>
-								<!--右边按钮-->
-								<input type="button" class="btn btn-primary pull-right" value="立即报名" />
-								<!--右边按钮-->
+								<!--字的内容框-->
 							</div>
-							<!--字的内容框-->
+							<!--字的大盒子-->
 						</div>
-						<!--字的大盒子-->
+						<!--一个活动盒子-->
+					</div>
+					<!--列-->
+				</div>
+				<!--行-->
+				<!--行-->
+				<div class="row">
+					<!--列-->
+					<div class="col-lg-6 col-md-6 col">
+						<!--一个活动盒子-->
+						<div class="activity_box">
+							<img class="img-responsive" src="../img/activity2.jpg" style="width: 100%;height: 278px;"/>
+							<!--字的大盒子-->
+							<div class="img_zi">
+								<!--字的内容框-->
+								<div class="img_zi_con">
+									<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
+									<!--左边的字-->
+									<div class="img_zi_left pull-left">
+										<p>长期</p>
+										<p>上海</p>
+									</div>
+									<!--右边按钮-->
+									<input type="button" class="btn btn-primary pull-right" value="立即报名" />
+									<!--右边按钮-->
+								</div>
+								<!--字的内容框-->
+							</div>
+							<!--字的大盒子-->
+						</div>
+						<!--一个活动盒子-->
+					</div>
+					<!--列-->
+					<div class="col-lg-6 col-md-6 col">
+						<!--一个活动盒子-->
+						<div class="activity_box">
+							<img class="img-responsive" src="../img/activity3.jpg" style="width: 100%;height: 278px;"/>
+							<!--字的大盒子-->
+							<div class="img_zi">
+								<!--字的内容框-->
+								<div class="img_zi_con">
+									<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
+									<!--左边的字-->
+									<div class="img_zi_left pull-left">
+										<p>长期</p>
+										<p>上海</p>
+									</div>
+									<!--右边按钮-->
+									<input type="button" class="btn btn-primary pull-right" value="立即报名" />
+									<!--右边按钮-->
+								</div>
+								<!--字的内容框-->
+							</div>
+							<!--字的大盒子-->
+						</div>
+						<!--一个活动盒子-->
+					</div>
+					<!--列-->
+				</div>
+				<!--行-->
+				<!--行-->
+				<div class="row">
+					<!--列-->
+					<div class="col-lg-6 col-md-6 col">
+						<!--一个活动盒子-->
+						<div class="activity_box">
+							<img class="img-responsive" src="../img/activity4.jpg" style="width: 100%;height: 278px;"/>
+							<!--字的大盒子-->
+							<div class="img_zi">
+								<!--字的内容框-->
+								<div class="img_zi_con">
+									<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
+									<!--左边的字-->
+									<div class="img_zi_left pull-left">
+										<p>长期</p>
+										<p>上海</p>
+									</div>
+									<!--右边按钮-->
+									<input type="button" class="btn btn-primary pull-right" value="立即报名" />
+									<!--右边按钮-->
+								</div>
+								<!--字的内容框-->
+							</div>
+							<!--字的大盒子-->
+						</div>
+						<!--一个活动盒子-->
+					</div>
+					<!--列-->
+					<div class="col-lg-6 col-md-6 col">
+						<!--一个活动盒子-->
+						<div class="activity_box">
+							<img class="img-responsive" src="../img/activity5.jpg" style="width: 100%;height: 278px;"/>
+							<!--字的大盒子-->
+							<div class="img_zi">
+								<!--字的内容框-->
+								<div class="img_zi_con">
+									<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
+									<!--左边的字-->
+									<div class="img_zi_left pull-left">
+										<p>长期</p>
+										<p>上海</p>
+									</div>
+									<!--右边按钮-->
+									<input type="button" class="btn btn-primary pull-right" value="立即报名" />
+									<!--右边按钮-->
+								</div>
+								<!--字的内容框-->
+							</div>
+							<!--字的大盒子-->
+						</div>
+						<!--一个活动盒子-->
 					</div>
 					<!--列-->
 				</div>
@@ -312,92 +369,53 @@
 					<div class="row">
 						<!--列-->
 						<div class="col-lg-6 col-md-6 col">
-							<img class="img-responsive" src="../img/activity1.jpg" style="width: 100%;height: 278px;"/>
-							<!--字的大盒子-->
-							<div class="img_zi">
-								<!--字的内容框-->
-								<div class="img_zi_con">
-									<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
-									<!--左边的字-->
-									<div class="img_zi_left pull-left">
-										<p>长期</p>
-										<p>上海</p>
+							<!--一个活动盒子-->
+							<div class="activity_box">
+								<img class="img-responsive" src="../img/activity1.jpg" style="width: 100%;height: 278px;"/>
+								<!--字的大盒子-->
+								<div class="img_zi">
+									<!--字的内容框-->
+									<div class="img_zi_con">
+										<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
+										<!--左边的字-->
+										<div class="img_zi_left pull-left">
+											<p>长期</p>
+											<p>上海</p>
+										</div>
+										<!--右边按钮-->
+										<input type="button" class="btn btn-primary pull-right" value="立即报名" />
+										<!--右边按钮-->
 									</div>
-									<!--右边按钮-->
-									<input type="button" class="btn btn-primary pull-right" value="立即报名" />
-									<!--右边按钮-->
+									<!--字的内容框-->
 								</div>
-								<!--字的内容框-->
+								<!--字的大盒子-->
 							</div>
-							<!--字的大盒子-->
+							<!--一个活动盒子-->
 						</div>
 						<!--列-->
 						<div class="col-lg-6 col-md-6 col">
-							<img class="img-responsive" src="../img/activity2.jpg" style="width: 100%;height: 278px;" />
-							<!--字的大盒子-->
-							<div class="img_zi">
-								<!--字的内容框-->
-								<div class="img_zi_con">
-									<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
-									<!--左边的字-->
-									<div class="img_zi_left pull-left">
-										<p>长期</p>
-										<p>上海</p>
+							<!--一个活动盒子-->
+							<div class="activity_box">
+								<img class="img-responsive" src="../img/activity1.jpg" style="width: 100%;height: 278px;"/>
+								<!--字的大盒子-->
+								<div class="img_zi">
+									<!--字的内容框-->
+									<div class="img_zi_con">
+										<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
+										<!--左边的字-->
+										<div class="img_zi_left pull-left">
+											<p>长期</p>
+											<p>上海</p>
+										</div>
+										<!--右边按钮-->
+										<input type="button" class="btn btn-primary pull-right" value="立即报名" />
+										<!--右边按钮-->
 									</div>
-									<!--右边按钮-->
-									<input type="button" class="btn btn-primary pull-right" value="立即报名" />
-									<!--右边按钮-->
+									<!--字的内容框-->
 								</div>
-								<!--字的内容框-->
+								<!--字的大盒子-->
 							</div>
-							<!--字的大盒子-->
-						</div>
-						<!--列-->
-					</div>
-					<!--行-->
-					<!--行-->
-					<div class="row">
-						<!--列-->
-						<div class="col-lg-6 col-md-6 col">
-							<img class="img-responsive" src="../img/activity1.jpg" style="width: 100%;height: 278px;"/>
-							<!--字的大盒子-->
-							<div class="img_zi">
-								<!--字的内容框-->
-								<div class="img_zi_con">
-									<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
-									<!--左边的字-->
-									<div class="img_zi_left pull-left">
-										<p>长期</p>
-										<p>上海</p>
-									</div>
-									<!--右边按钮-->
-									<input type="button" class="btn btn-primary pull-right" value="立即报名" />
-									<!--右边按钮-->
-								</div>
-								<!--字的内容框-->
-							</div>
-							<!--字的大盒子-->
-						</div>
-						<!--列-->
-						<div class="col-lg-6 col-md-6 col">
-							<img class="img-responsive" src="../img/activity2.jpg" style="width: 100%;height: 278px;" />
-							<!--字的大盒子-->
-							<div class="img_zi">
-								<!--字的内容框-->
-								<div class="img_zi_con">
-									<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
-									<!--左边的字-->
-									<div class="img_zi_left pull-left">
-										<p>长期</p>
-										<p>上海</p>
-									</div>
-									<!--右边按钮-->
-									<input type="button" class="btn btn-primary pull-right" value="立即报名" />
-									<!--右边按钮-->
-								</div>
-								<!--字的内容框-->
-							</div>
-							<!--字的大盒子-->
+							<!--一个活动盒子-->
 						</div>
 						<!--列-->
 					</div>
@@ -406,92 +424,53 @@
 					<div class="row">
 						<!--列-->
 						<div class="col-lg-6 col-md-6 col">
-							<img class="img-responsive" src="../img/activity1.jpg" style="width: 100%;height: 278px;"/>
-							<!--字的大盒子-->
-							<div class="img_zi">
-								<!--字的内容框-->
-								<div class="img_zi_con">
-									<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
-									<!--左边的字-->
-									<div class="img_zi_left pull-left">
-										<p>长期</p>
-										<p>上海</p>
+							<!--一个活动盒子-->
+							<div class="activity_box">
+								<img class="img-responsive" src="../img/activity1.jpg" style="width: 100%;height: 278px;"/>
+								<!--字的大盒子-->
+								<div class="img_zi">
+									<!--字的内容框-->
+									<div class="img_zi_con">
+										<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
+										<!--左边的字-->
+										<div class="img_zi_left pull-left">
+											<p>长期</p>
+											<p>上海</p>
+										</div>
+										<!--右边按钮-->
+										<input type="button" class="btn btn-primary pull-right" value="立即报名" />
+										<!--右边按钮-->
 									</div>
-									<!--右边按钮-->
-									<input type="button" class="btn btn-primary pull-right" value="立即报名" />
-									<!--右边按钮-->
+									<!--字的内容框-->
 								</div>
-								<!--字的内容框-->
+								<!--字的大盒子-->
 							</div>
-							<!--字的大盒子-->
+							<!--一个活动盒子-->
 						</div>
 						<!--列-->
 						<div class="col-lg-6 col-md-6 col">
-							<img class="img-responsive" src="../img/activity2.jpg" style="width: 100%;height: 278px;" />
-							<!--字的大盒子-->
-							<div class="img_zi">
-								<!--字的内容框-->
-								<div class="img_zi_con">
-									<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
-									<!--左边的字-->
-									<div class="img_zi_left pull-left">
-										<p>长期</p>
-										<p>上海</p>
+							<!--一个活动盒子-->
+							<div class="activity_box">
+								<img class="img-responsive" src="../img/activity1.jpg" style="width: 100%;height: 278px;"/>
+								<!--字的大盒子-->
+								<div class="img_zi">
+									<!--字的内容框-->
+									<div class="img_zi_con">
+										<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
+										<!--左边的字-->
+										<div class="img_zi_left pull-left">
+											<p>长期</p>
+											<p>上海</p>
+										</div>
+										<!--右边按钮-->
+										<input type="button" class="btn btn-primary pull-right" value="立即报名" />
+										<!--右边按钮-->
 									</div>
-									<!--右边按钮-->
-									<input type="button" class="btn btn-primary pull-right" value="立即报名" />
-									<!--右边按钮-->
+									<!--字的内容框-->
 								</div>
-								<!--字的内容框-->
+								<!--字的大盒子-->
 							</div>
-							<!--字的大盒子-->
-						</div>
-						<!--列-->
-					</div>
-					<!--行-->
-					<!--行-->
-					<div class="row">
-						<!--列-->
-						<div class="col-lg-6 col-md-6 col">
-							<img class="img-responsive" src="../img/activity1.jpg" style="width: 100%;height: 278px;"/>
-							<!--字的大盒子-->
-							<div class="img_zi">
-								<!--字的内容框-->
-								<div class="img_zi_con">
-									<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
-									<!--左边的字-->
-									<div class="img_zi_left pull-left">
-										<p>长期</p>
-										<p>上海</p>
-									</div>
-									<!--右边按钮-->
-									<input type="button" class="btn btn-primary pull-right" value="立即报名" />
-									<!--右边按钮-->
-								</div>
-								<!--字的内容框-->
-							</div>
-							<!--字的大盒子-->
-						</div>
-						<!--列-->
-						<div class="col-lg-6 col-md-6 col">
-							<img class="img-responsive" src="../img/activity2.jpg" style="width: 100%;height: 278px;" />
-							<!--字的大盒子-->
-							<div class="img_zi">
-								<!--字的内容框-->
-								<div class="img_zi_con">
-									<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
-									<!--左边的字-->
-									<div class="img_zi_left pull-left">
-										<p>长期</p>
-										<p>上海</p>
-									</div>
-									<!--右边按钮-->
-									<input type="button" class="btn btn-primary pull-right" value="立即报名" />
-									<!--右边按钮-->
-								</div>
-								<!--字的内容框-->
-							</div>
-							<!--字的大盒子-->
+							<!--一个活动盒子-->
 						</div>
 						<!--列-->
 					</div>
@@ -500,45 +479,108 @@
 					<div class="row">
 						<!--列-->
 						<div class="col-lg-6 col-md-6 col">
-							<img class="img-responsive" src="../img/activity1.jpg" style="width: 100%;height: 278px;"/>
-							<!--字的大盒子-->
-							<div class="img_zi">
-								<!--字的内容框-->
-								<div class="img_zi_con">
-									<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
-									<!--左边的字-->
-									<div class="img_zi_left pull-left">
-										<p>长期</p>
-										<p>上海</p>
+							<!--一个活动盒子-->
+							<div class="activity_box">
+								<img class="img-responsive" src="../img/activity1.jpg" style="width: 100%;height: 278px;"/>
+								<!--字的大盒子-->
+								<div class="img_zi">
+									<!--字的内容框-->
+									<div class="img_zi_con">
+										<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
+										<!--左边的字-->
+										<div class="img_zi_left pull-left">
+											<p>长期</p>
+											<p>上海</p>
+										</div>
+										<!--右边按钮-->
+										<input type="button" class="btn btn-primary pull-right" value="立即报名" />
+										<!--右边按钮-->
 									</div>
-									<!--右边按钮-->
-									<input type="button" class="btn btn-primary pull-right" value="立即报名" />
-									<!--右边按钮-->
+									<!--字的内容框-->
 								</div>
-								<!--字的内容框-->
+								<!--字的大盒子-->
 							</div>
-							<!--字的大盒子-->
+							<!--一个活动盒子-->
 						</div>
 						<!--列-->
 						<div class="col-lg-6 col-md-6 col">
-							<img class="img-responsive" src="../img/activity2.jpg" style="width: 100%;height: 278px;" />
-							<!--字的大盒子-->
-							<div class="img_zi">
-								<!--字的内容框-->
-								<div class="img_zi_con">
-									<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
-									<!--左边的字-->
-									<div class="img_zi_left pull-left">
-										<p>长期</p>
-										<p>上海</p>
+							<!--一个活动盒子-->
+							<div class="activity_box">
+								<img class="img-responsive" src="../img/activity1.jpg" style="width: 100%;height: 278px;"/>
+								<!--字的大盒子-->
+								<div class="img_zi">
+									<!--字的内容框-->
+									<div class="img_zi_con">
+										<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
+										<!--左边的字-->
+										<div class="img_zi_left pull-left">
+											<p>长期</p>
+											<p>上海</p>
+										</div>
+										<!--右边按钮-->
+										<input type="button" class="btn btn-primary pull-right" value="立即报名" />
+										<!--右边按钮-->
 									</div>
-									<!--右边按钮-->
-									<input type="button" class="btn btn-primary pull-right" value="立即报名" />
-									<!--右边按钮-->
+									<!--字的内容框-->
 								</div>
-								<!--字的内容框-->
+								<!--字的大盒子-->
 							</div>
-							<!--字的大盒子-->
+							<!--一个活动盒子-->
+						</div>
+						<!--列-->
+					</div>
+					<!--行-->
+					<!--行-->
+					<div class="row">
+						<!--列-->
+						<div class="col-lg-6 col-md-6 col">
+							<!--一个活动盒子-->
+							<div class="activity_box">
+								<img class="img-responsive" src="../img/activity1.jpg" style="width: 100%;height: 278px;"/>
+								<!--字的大盒子-->
+								<div class="img_zi">
+									<!--字的内容框-->
+									<div class="img_zi_con">
+										<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
+										<!--左边的字-->
+										<div class="img_zi_left pull-left">
+											<p>长期</p>
+											<p>上海</p>
+										</div>
+										<!--右边按钮-->
+										<input type="button" class="btn btn-primary pull-right" value="立即报名" />
+										<!--右边按钮-->
+									</div>
+									<!--字的内容框-->
+								</div>
+								<!--字的大盒子-->
+							</div>
+							<!--一个活动盒子-->
+						</div>
+						<!--列-->
+						<div class="col-lg-6 col-md-6 col">
+							<!--一个活动盒子-->
+							<div class="activity_box">
+								<img class="img-responsive" src="../img/activity1.jpg" style="width: 100%;height: 278px;"/>
+								<!--字的大盒子-->
+								<div class="img_zi">
+									<!--字的内容框-->
+									<div class="img_zi_con">
+										<h3>上海黑马独角兽花园：全球招募科创企业入驻</h3>
+										<!--左边的字-->
+										<div class="img_zi_left pull-left">
+											<p>长期</p>
+											<p>上海</p>
+										</div>
+										<!--右边按钮-->
+										<input type="button" class="btn btn-primary pull-right" value="立即报名" />
+										<!--右边按钮-->
+									</div>
+									<!--字的内容框-->
+								</div>
+								<!--字的大盒子-->
+							</div>
+							<!--一个活动盒子-->
 						</div>
 						<!--列-->
 					</div>
@@ -562,32 +604,32 @@
 					<div class="col-lg-10 col-md-10 col-sm-12 footer_col_zi">
 						<!--<div class="container">-->
 		                    <div class="row">
-		                        <div class="pull-left col-xs-3 footer_title col-lg-1 col-md-2">旗下品牌</div>
-		                        <div class="pull-left col-xs-9 col-lg-11 col-md-10">
+		                        <div class="pull-left col-xs-3 footer_title col-lg-2 col-md-2">旗下品牌</div>
+		                        <div class="pull-left col-xs-9 col-lg-10 col-md-10">
 		                            <a href="#" target="_blank">黑马学吧</a>
 		                            <a href="#" target="_blank">创业家</a>
 		                            <a href="#" target="_blank">黑马基金</a>
 		                        </div>
 		                    </div>
 		                    <div class="row">
-		                        <div class="pull-left col-xs-3 footer_title col-lg-1 col-md-2">关于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-		                        <div class="pull-left col-xs-9 col-lg-11 col-md-10">
+		                        <div class="pull-left col-xs-3 footer_title col-lg-2 col-md-2">关于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+		                        <div class="pull-left col-xs-9 col-lg-10 col-md-10">
 		                            <a href="#" target="_blank">关于黑马</a>
 		                            <a href="#" target="_blank">意见反馈</a>
 		                            <a href="#" target="_blank">免责声明</a>
 		                        </div>
 		                    </div><br />
 		                    <div class="row">
-		                        <div class="pull-left col-xs-3 footer_title col-lg-1 col-md-2">合作伙伴</div>
-		                        <div class="pull-left col-xs-9 col-lg-11 col-md-10">
+		                        <div class="pull-left col-xs-3 footer_title col-lg-2 col-md-2">合作伙伴</div>
+		                        <div class="pull-left col-xs-9 col-lg-10 col-md-10">
 		                            <a href="#" target="_blank"><img src="../img/footmlogo1.png"></a>
 		                            <a href="#" target="_blank"><img src="../img/footmlogo2.png"></a>
 		                            <a href="#" target="_blank"><img src="../img/footmlogo3.png"></a>
 		                        </div>
 		                    </div><br />
 		                    <div class="row">
-		                        <div class="pull-left col-xs-3 footer_title col-lg-1 col-md-2">友情链接</div>
-		                        <div class="pull-left col-xs-9 col-lg-11 col-md-10">
+		                        <div class="pull-left col-xs-3 footer_title col-lg-2 col-md-2">友情链接</div>
+		                        <div class="pull-left col-xs-9 col-lg-10 col-md-10">
 		                            <a href="#" target="_blank">腾讯财经</a>
 		                            <a href="#" target="_blank">站长之家</a>
 		                            <a href="#" target="_blank">黑马大赛</a>

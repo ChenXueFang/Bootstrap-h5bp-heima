@@ -1,9 +1,5 @@
 //主体最外的row
 .hot_wai_row>div{
-    margin-top: 20px;
-    @media (max-width: (@screen-sm-min - 1)){
-        margin-top: 50px;
-    }
     //轮播定位字
     .item{
         .hot_lun_zi{
@@ -73,9 +69,13 @@
 }
 //滚动的字
 .scrollbox{
+    height: 880px;
     background: #fff;
     padding: 20px 20px 0 0;
     overflow: hidden;
+    #scrollDiv{
+        overflow: hidden;
+    }
     .kuaiXun{
         font-size: 20px;
         margin-left: 20px;
@@ -105,6 +105,7 @@
         }
     }
 }
+
 //热门课程
 .lesson_container{
     text-align: center;
@@ -150,20 +151,121 @@
     }
 }
 //左边详情新闻
-.hot_news{
-    padding: 20px 27px 20px 20px;
-    background: #fff;
-    border-bottom: 1px solid #d8d8d8;
+.hot_news_box{
+    .hot_news{
+        padding: 20px 27px 20px 20px;
+        background: #fff;
+        border-bottom: 1px solid #d8d8d8;
+    }
     .hot_news_col{
+        .hot_news_a{
+            display: block;
+            font-size: 20px;
+            color: #515151;
+            margin-bottom: 10px;
+            &:hover{
+                color: #fd4e3d;
+                text-decoration: none;
+            }
+        }
+        p{
+            font-size: 15px;
+            color: #7b7b7b;
+        }
+        .hot_news_three{
+            padding-left: 6px;
+            margin-top: 30px;
+            p{
+                cursor: pointer;
+                line-height: 30px;  
+            }
+            .hot_news_time{
+                margin-left: 40px;
+                margin-right: 25px;
+            }
+        }
         img{
             width: 30px;
             height: 30px;
         }
     }
 }
+//加载更多
+.hot_more{
+    text-align: center;
+    border: 1px solid #d8d8d8;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 20px;
+    color: #545454;
+    cursor: pointer;
+    @media (max-width: (@screen-sm-min - 1)){
+        margin-bottom: -10px;
+    }
+    p{
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+}
 
-
-
+//定位白色回到顶部
+    .fixed_bai{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+        li{
+            width: 53px;
+            height: 53px;
+            text-align: center;
+            margin-bottom: 2px;
+            cursor: pointer;
+            list-style-type: none;
+            font-size: 30px;
+            color: #b8b8b8;
+            background: #fff;
+            position: relative;
+            .advise{
+                display: none;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+            &:hover .advise{
+                display: block;
+                position: absolute;
+                top: 0;
+                width: 53px;
+                height: 53px;
+                display: -webkit-flex; /* Safari */
+                -webkit-align-items: center; /* Safari 7.0+  */
+                display: flex;
+                align-items: center;
+                justify-content: center; /*水平居中*/
+                font-size: 13px;
+                background: #fa4939;
+                color: #fff;
+            }
+            .glyphicon{
+                line-height: 53px;
+            }
+            .fixed_img{
+                position: absolute;
+                top: -100px;
+                left: -100px;
+                display: none;
+            }
+            &:hover .fixed_img{
+                display: block;
+            }
+            &:hover{
+                background: #fa4939;
+                color: #fff;
+            }
+        }
+        
+    }
 
 
 
